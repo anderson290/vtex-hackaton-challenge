@@ -6,4 +6,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @import './assets/scss/main.scss';
 
+main {
+    position: relative;
+}
+
 .light-container{ padding: 0% 10%; }

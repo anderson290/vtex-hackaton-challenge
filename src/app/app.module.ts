@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { MaterialCustomModule } from './modules/material-custom.module';
 import { CardComponent } from './home/card/card.component';
-import { ShopComponent } from './shop/shop.component';
+import { ShopModule } from './shop/shop.module';
 
 @NgModule({
   declarations: [
@@ -16,13 +16,14 @@ import { ShopComponent } from './shop/shop.component';
     HomeComponent,
     NavComponent,
     CardComponent,
-    ShopComponent
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialCustomModule
+    AppRoutingModule,
+    MaterialCustomModule,
+    ShopModule
   ],
   providers: [],
   bootstrap: [AppComponent]
