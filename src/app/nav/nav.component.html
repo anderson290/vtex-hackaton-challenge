@@ -1,0 +1,23 @@
+<nav aria-label="Top Toolbar" class="navbar_custom">
+
+    <button mat-icon-button color="secondary" [matMenuTriggerFor]="dropUser" class="float-right">
+        <mat-icon aria-hidden="false" aria-label="Botão com lista para os usuários">more_vert</mat-icon>
+    </button>
+
+    <button mat-button color="secondary" [matMenuTriggerFor]="menu">
+        <mat-icon aria-hidden="false" aria-label="Home da página">home</mat-icon>
+    </button>
+
+
+
+    <!-- drops -->
+    <mat-menu #dropUser="matMenu">
+        <a mat-menu-item>LogIn</a>
+        <a mat-menu-item>SignIn</a>
+    </mat-menu>
+
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+    </mat-menu>
+</nav>

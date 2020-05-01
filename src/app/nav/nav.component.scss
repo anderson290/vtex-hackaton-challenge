@@ -1,0 +1,8 @@
+@import './../../assets/scss/colors.scss';
+
+.navbar_custom{
+    width: 100%;
+    background: $primary;
+    color: $white;
+    padding: 1em 2em;
+}
