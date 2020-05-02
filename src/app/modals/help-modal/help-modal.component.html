@@ -1,0 +1,7 @@
+<section>
+    <h3 mat-dialog-title>{{data.question}}</h3>
+    <div mat-dialog-actions>
+        <button mat-raised-button color="secondary" (click)="onNoClick()">Não, obrigado!</button>
+        <button mat-raised-button color="primary" [mat-dialog-close]="data.ok" cdkFocusInitial>Sim</button>
+      </div>
+</section>
