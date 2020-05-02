@@ -8,6 +8,9 @@
         </li>     
     
         <li id="drop-menu">
+            <a mat-icon-button color="secondary" (click)="openHelpModal()">
+                <mat-icon  aria-hidden="false" aria-label="Auxílio para navegação na plataforma!">help_outline</mat-icon>
+            </a>
             <a mat-icon-button color="secondary" [matMenuTriggerFor]="dropUser" class="float-right" aria-expanded="false">
                 <mat-icon aria-hidden="false" aria-label="Botão com lista para os usuários">more_vert</mat-icon>
             </a>

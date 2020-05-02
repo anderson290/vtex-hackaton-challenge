@@ -1,13 +1,13 @@
-<mat-card class="example-card">
-  <mat-card-header>
+<mat-card >
+  <mat-card-header tabindex="0">
     <mat-card-title>{{content?.title}}</mat-card-title>
   </mat-card-header>
   <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
   <mat-card-content>
-    <p>
+    <p tabindex="0">
       {{content?.description}}
     </p>
-    <b>R$: {{content?.price}}</b>
+   <b tabindex="0">{{content?.price}} reais</b>
   </mat-card-content>
   <mat-card-actions>
     <button mat-button [routerLink]="['/shop']" color="secondary" class="w-100">Comprar</button>

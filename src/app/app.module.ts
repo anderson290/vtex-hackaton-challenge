@@ -10,6 +10,7 @@ import { MaterialCustomModule } from './modules/material-custom.module';
 import { CardComponent } from './home/card/card.component';
 import { ShopModule } from './shop/shop.module';
 import { HttpClientModule } from '@angular/common/http';
+import { HelpModalComponent } from './modals/help-modal/help-modal.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     NavComponent,
     CardComponent,
+    HelpModalComponent,
   
   ],
   imports: [

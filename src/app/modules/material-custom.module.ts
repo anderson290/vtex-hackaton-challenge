@@ -8,7 +8,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
 
@@ -21,7 +21,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatFormFieldModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatDialogModule
   ],
   exports: [
     MatMenuModule,
@@ -32,7 +33,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatFormFieldModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatProgressBarModule 
+    MatProgressBarModule,
+    MatDialogModule
   ],
   providers: [MatDatepickerModule]
 

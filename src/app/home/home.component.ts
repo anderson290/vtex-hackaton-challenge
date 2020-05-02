@@ -29,6 +29,13 @@ export class HomeComponent implements OnInit {
         company_id: 3
       },
       {
+        _id: 22,
+        title: "Alênia",
+        description: "Respiração",
+        price: 21.40,
+        company_id: 12
+      },
+      {
         _id: 34,
         title: "Dorflex",
         description: "Combate dores no corpo!",
