@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {DomSanitizer} from '@angular/platform-browser';
+import {MatIconRegistry} from '@angular/material/icon';
 @Component({
   selector: 'app-finish',
   templateUrl: './finish.component.html',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinishComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon(
+        'check',
+        sanitizer.bypassSecurityTrustResourceUrl('assets/images/check.svg'));
+  }
   ngOnInit(): void {
   }
 

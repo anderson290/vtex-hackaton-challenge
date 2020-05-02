@@ -9,6 +9,8 @@ import { NavComponent } from './nav/nav.component';
 import { MaterialCustomModule } from './modules/material-custom.module';
 import { CardComponent } from './home/card/card.component';
 import { ShopModule } from './shop/shop.module';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,10 @@ import { ShopModule } from './shop/shop.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialCustomModule,
-    ShopModule
+    ShopModule,
+    HttpClientModule,
+  
+
   ],
   providers: [],
   bootstrap: [AppComponent]

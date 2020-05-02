@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { slider } from '../route-animations';
+import { sliderLazing } from './../route-animations';
 
 @Component({
   selector: 'app-shop',
   templateUrl: './shop.component.html',
   styleUrls: ['./shop.component.scss'],
-  animations: [slider]
+  animations: [sliderLazing]
 })
 export class ShopComponent implements OnInit {
 

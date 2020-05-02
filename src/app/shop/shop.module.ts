@@ -4,8 +4,10 @@ import { ShopComponent } from './shop.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ProductComponent } from './product/product.component';
 import { FinishComponent } from './finish/finish.component';
-import { ShopRoutingModule } from './shop.routing.module';
-
+import { MaterialCustomModule } from '../modules/material-custom.module';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,10 @@ import { ShopRoutingModule } from './shop.routing.module';
     FinishComponent
   ],
   imports: [
-    ShopRoutingModule
+    FormsModule,
+    RouterModule,
+    MaterialCustomModule,
+    NgxMaskModule.forRoot(),
   ],
   providers: [],
   bootstrap: []

@@ -1,1 +1,17 @@
 @import './colors.scss';
+.mat-form-field-empty.mat-form-field-label {
+    color: $primary;
+}
+
+/* Border */
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: $primary;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-wrapper{
+    padding: 0;
+}
+
+.mat-input-placeholder {
+    color: red;
+}

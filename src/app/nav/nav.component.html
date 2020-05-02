@@ -1,17 +1,23 @@
-<nav aria-label="Top Toolbar" class="navbar_custom">
-
-    <button mat-icon-button color="secondary" [matMenuTriggerFor]="dropUser" class="float-right">
-        <mat-icon aria-hidden="false" aria-label="Botão com lista para os usuários">more_vert</mat-icon>
-    </button>
-
-    <button mat-button color="secondary" [routerLink]="['/']">
-        <mat-icon aria-hidden="false" aria-label="Home da página">home</mat-icon>
-    </button>
-
-
-    <!-- drops -->
-    <mat-menu #dropUser="matMenu">
-        <button [routerLink]="['/login']"  mat-menu-item>LogIn</button>
-        <button [routerLink]="['/signin']" mat-menu-item>SignIn</button>
-    </mat-menu>
+<nav aria-label="Barra de Navegação" class="navbar_custom">
+    <ul [hidden]="url == '/checkout'">
+        <li>
+            <a mat-button color="secondary" [routerLink]="['/']">
+                <mat-icon aria-hidden="false" *ngIf="url=='/shop'" aria-label="Voltar">keyboard_arrow_left</mat-icon>
+                <mat-icon aria-hidden="false" *ngIf="url!='/shop'" aria-label="Voltar">home</mat-icon>
+            </a>
+        </li>     
+    
+        <li id="drop-menu">
+            <a mat-icon-button color="secondary" [matMenuTriggerFor]="dropUser" class="float-right" aria-expanded="false">
+                <mat-icon aria-hidden="false" aria-label="Botão com lista para os usuários">more_vert</mat-icon>
+            </a>
+        
+            <!-- drops -->
+            <mat-menu #dropUser="matMenu">
+                <button [routerLink]="['/login']"  mat-menu-item>LogIn</button>
+                <button [routerLink]="['/signin']" mat-menu-item>SignIn</button>
+            </mat-menu>
+        </li>  
+    </ul>
+    <h1 class="text-center my-2" *ngIf="url == '/checkout'">Estamos quase lá..</h1>
 </nav>

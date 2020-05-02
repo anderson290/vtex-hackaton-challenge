@@ -1,0 +1,70 @@
+@import './../../../assets/scss/colors';
+
+.wallet-icon{
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+input:-moz-read-only { /* For Firefox */
+    color: rgb(204, 204, 204);
+  }
+  
+  input:read-only {
+    color: rgb(207, 207, 207);
+  }
+
+// mat-label normal state style
+::ng-deep .mat-form-field-label {
+    color: $primary
+    // color: $mainColor!important;
+}
+
+// mat-label focused style
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: $primary
+}
+
+// mat-label error style
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color: $primary
+}
+
+//datepicker
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: $primary !important;
+   }
+   
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: $primary !important;
+   } 
+   
+   ::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: $primary !important;;
+   }
+   
+   ::ng-deep .mat-form-field-label {
+    /*change color of label*/
+    color: $primary !important;
+   }
+   
+   
+   mat-datepicker-toggle {
+    color: $primary !important;
+   }

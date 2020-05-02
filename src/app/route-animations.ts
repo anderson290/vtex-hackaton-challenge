@@ -16,6 +16,12 @@ export const slider =
     transition('* => isRight', slideTo('right') ),
     transition('isRight => *', slideTo('left') ),
     transition('isLeft => *', slideTo('right') )
+  ]), sliderLazing =
+  trigger('routeAnimationsLazing', [
+    transition('* => isLeft', slideTo('left') ),
+    transition('* => isRight', slideTo('right') ),
+    transition('isRight => *', slideTo('left') ),
+    transition('isLeft => *', slideTo('right') )
   ]);
 
 function slideTo(direction) {
