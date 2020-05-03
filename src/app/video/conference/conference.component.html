@@ -1,1 +1,26 @@
-<p>conference works!</p>
+<div class="container">
+   
+    <div class="grid-left">
+        <app-rooms #rooms (roomChanged)="onRoomChanged($event)"
+                   [activeRoomName]="!!activeRoom ? activeRoom.name : null"></app-rooms>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-12" >
+            <app-camera #camera [style.display]="!!activeRoom ? 'none' : 'block'"></app-camera>
+            <app-participants #participants
+                              (leaveRoom)="onLeaveRoom($event)"
+                              (participantsChanged)="onParticipantsChanged($event)"
+                              [style.display]="!!activeRoom ? 'block' : 'none'"
+                              [activeRoomName]="!!activeRoom ? activeRoom.name : null"></app-participants>
+        </div>
+        <div class="col-md-4 col-12">
+            <app-settings #settings (settingsChanged)="onSettingsChanged($event)"></app-settings>
+        </div>
+    </div>
+  
+    <div class="grid-top-left">
+        <a href="https://www.twilio.com/video" target="_blank">
+            Powered by Twilio
+        </a>
+    </div>
+</div>

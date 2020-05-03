@@ -5,6 +5,9 @@
                 <mat-icon aria-hidden="false" *ngIf="url=='/shop'" aria-label="Voltar">keyboard_arrow_left</mat-icon>
                 <mat-icon aria-hidden="false" *ngIf="url!='/shop'" aria-label="Voltar">home</mat-icon>
             </a>
+        </li>
+        <li *ngIf="isOn">    
+            <app-conference ></app-conference>
         </li>     
     
         <li id="drop-menu">
@@ -25,4 +28,3 @@
     <h1 class="text-center my-2" *ngIf="url == '/checkout'">Estamos quase lá..</h1>
 </nav>
 
-<app-conference *ngIf="isOn"></app-conference>
