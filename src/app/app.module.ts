@@ -11,7 +11,13 @@ import { CardComponent } from './home/card/card.component';
 import { ShopModule } from './shop/shop.module';
 import { HttpClientModule } from '@angular/common/http';
 import { HelpModalComponent } from './modals/help-modal/help-modal.component';
-
+import { ConferenceComponent } from './video/conference/conference.component';
+import { CameraComponent } from './video/camera/camera.component';
+import { ParticipantsComponent } from './video/participants/participants.component';
+import { RoomsComponent } from './video/rooms/rooms.component';
+import { SettingsComponent } from './video/settings/settings.component';
+import { DeviceSelectComponent } from './video/settings/device-select/device-select.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +26,13 @@ import { HelpModalComponent } from './modals/help-modal/help-modal.component';
     NavComponent,
     CardComponent,
     HelpModalComponent,
+    ConferenceComponent,
+    CameraComponent,
+    ParticipantsComponent,
+    RoomsComponent,
+    SettingsComponent,
+    DeviceSelectComponent,
+    
   
   ],
   imports: [
@@ -29,7 +42,7 @@ import { HelpModalComponent } from './modals/help-modal/help-modal.component';
     MaterialCustomModule,
     ShopModule,
     HttpClientModule,
-  
+    FormsModule
 
   ],
   providers: [],

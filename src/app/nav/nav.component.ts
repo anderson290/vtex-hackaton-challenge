@@ -11,10 +11,11 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 export class NavComponent implements OnInit {
 
   url: string = '';
+  isOn: boolean = false;
 
-  constructor(router:Router,public dialog: MatDialog) { 
+  constructor(router: Router, public dialog: MatDialog) {
     router.events.subscribe(event => {
-      if(event instanceof NavigationStart) {
+      if (event instanceof NavigationStart) {
         this.url = event.url;
       }
     });
@@ -23,13 +24,18 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openHelpModal(){
+  openHelpModal() {
     const dialogRef = this.dialog.open(HelpModalComponent, {
       width: '400px',
-      data: {question: 'Deseja solicitar ajuda de um especialista?'}
+      data: { question: 'Deseja solicitar ajuda de um especialista?' }
     });
 
     dialogRef.afterClosed().subscribe(result => {
+      if (result == 'ok') {
+        this.isOn = true;
+      } else {
+        this.isOn = false;
+      }
     });
   }
 }

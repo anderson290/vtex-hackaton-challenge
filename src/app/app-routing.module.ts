@@ -7,9 +7,9 @@ import { CheckoutComponent } from './shop/checkout/checkout.component';
 import { ShopComponent } from './shop/shop.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, data: { animation: 'isLeft' } },
+  { path: '', component: HomeComponent },
   { path: 'shop', component: ShopComponent, data: { animation: 'isRight' } },
-  { path: 'checkout', component: CheckoutComponent, data: { animation: 'isRight' } },
+  { path: 'checkout', component: CheckoutComponent, data: { animation: 'isLeft' } },
   { path: 'finish', component: FinishComponent, data: { animation: 'isRight' } }
 ];
 
