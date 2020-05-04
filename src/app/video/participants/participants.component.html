@@ -1,11 +1,6 @@
 <div id="participant-list">
     <div id="alone" [ngClass]="{ 'table': isAlone, 'd-none': !isAlone }">
-        <p class="text-center text-monospace h3" style="display: table-cell">
-            Você está em espera! <i class="far fa-frown"></i>
-            <br />
-            <br />
-            Um(a) atendente estará contigo em instantes..
-        </p>
+        <img src="../../../assets/images/oldladynew.jpg">
     </div>
     <div [ngClass]="{ 'd-none': isAlone }">
         <nav class="navbar navbar-expand-lg navbar-dark bg-light shadow">
