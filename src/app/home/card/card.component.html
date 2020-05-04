@@ -2,7 +2,7 @@
   <mat-card-header tabindex="0">
     <mat-card-title>{{content?.title}}</mat-card-title>
   </mat-card-header>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <img mat-card-image src={{content?.image}} alt="Photo of a Shiba Inu">
   <mat-card-content>
     <p tabindex="0">
       {{content?.description}}

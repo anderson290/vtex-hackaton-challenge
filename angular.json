@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "desafio-vtex"
+  "defaultProject": "desafio-vtex",
+  "cli": {
+    "analytics": "9468abb0-4461-422d-966a-5662288265ae"
+  }
 }
